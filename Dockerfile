@@ -7,4 +7,5 @@ RUN pip install --no-cache-dir --upgrade pip && \
     pip install dbt-bigquery && \
     pip install awscli
 
+COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT [ "/entrypoint.sh" ]
